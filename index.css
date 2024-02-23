@@ -1,9 +1,13 @@
+
+@media only screen and (min-width: 1025px) {
 .main-app-container{
     background-size: cover;
     height: 100Vh;
-    width: 80vw;
+    width: 100vw;
     margin: auto;
     background-color: #e8e4e3;
+    
+}
 }
 .nav-list-container{
     display: flex;
@@ -11,7 +15,8 @@
     align-items: flex-start;
     background-color:#ff7a7a ;
     height: 20px;
-    padding: 18px; 
+    padding: 18px;
+
 }
 .nav-item{
     font-size: 18px;
@@ -25,133 +30,212 @@
     width: 20px;
     height: 20px;
 }
-.top-page-container{
+.top-page-container {
     display: flex;
-    width: 100%;
-    margin-bottom: 10px;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+   
 }
+
 .lorem-container{
-    width: 50%;
-    height: 430px;
-    padding: 10px;
+
+    width: 100%;
+    height: 100%;
     background-image: linear-gradient(to right, #fdf4d2, #ffccd4);
 }
 .lorem-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     margin-left: 15px;
     margin-top: 50px;
 }
-.burger-image-container{
-    width: 50%;
+
+.burger-image-container {
+    flex: 1;
+    display: flex;
+    height: 100%; /* Set the height to 100% */
 }
-.burger-image{
+.burger-image {
+    max-width: 100%;
+    max-height: 100%; /* Set the max-height to 100% */
+    height: auto;
+}
+.lorem-container {
+    max-width: 50%; /* Set a maximum width for better readability on larger screens */
     width: 100%;
-    height: 450px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
-.lorem-heading{
-    font-size: 45px;
-    letter-spacing: 5px;
+
+.lorem-heading {
+    font-size: 5vw; /* Use viewport units for font size to make it responsive */
+    letter-spacing: 1vw; /* Use viewport units for letter spacing */
     font-family: "Arial";
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 2vw; /* Use viewport units for margin */
 }
-.lorem-description{
-    font-size: 16px;
+
+.lorem-description {
+    font-size: 1.5vw; /* Use viewport units for font size to make it responsive */
     font-weight: none;
-    font-family: "Arial", "Sans-serif";
-    color: 	#625053;
-    margin-bottom: 30px;
+    color: #625053;
+    margin-bottom: 2vw; /* Use viewport units for margin */
 }
-.click-me-button{
+
+.click-me-button {
     color: #ffffff;
-    width: 180px;
-    height: 45px;
-    padding: 20px;
-    padding-bottom: 20px;
-    background-color:#ff3352 ;
-    font-size: 15px;
+    width: 40vw; /* Use viewport units for width */
+    height: 10vw; /* Use viewport units for height */
+    padding: 2vw; /* Use viewport units for padding */
+    background-color: #ff3352;
+    font-size: 1.5vw; /* Use viewport units for font size to make it responsive */
     text-align: center;
     border: none;
-    margin-top: 30px;
+    margin-top: 2vw; /* Use viewport units for margin */
+    
+    
 }
-.bottom-page-container{
-    background-image: linear-gradient(to right, #fdf4d2, #ffccd4, #f099d9);
-    display: flex;
-    padding: 20px;
-    height: 500px;
-    margin-bottom: 20px;
-}
-.three-image-container{
+@media only screen and (min-width: 1025px) {
+.bottom-page-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    width: 50%;
-    height: 300px;
-    padding: 10px;
-    height: 430px;
-    margin-top: 20px;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+    width: 100%;
+            
 }
-.rachel-bronzini-image{
+}
+
+.cont{
+    display: flex;
+    width: 50%;
+}
+
+.three-image-container {
+    display: flex;
+       
+}
+
+.rachel-bronzini-image {
     display: flex;
     flex-direction: column;
-    margin: 9px;
+    max-width: 250px;
+    height: auto;
+    object-fit: cover;
+    }
+
+.mister img {
+    
+    max-width: 250px;
+    height: 100%;
+    object-fit: cover;
+  
 }
-.rachel{
-    width: 200px;
-    height: 200px;
-    margin-bottom: 6px;
+
+/* .mister {
+    width: 500px;
+    height: 500px;
+} */
+
+.lorem-card-container {
+
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
-.bronzini{
-    width: 200px;
-    height: 200px;
-}
-.mister{
-    width: 250px;
-    height: 405px;
-}
-.card-container{
-    width: 300px;
-    height: 180px;
+.card-container {
+    width: 50%;
+  
     background-color: #ff3352;
     padding: 20px;
+    margin-top: 20px;
 }
-.card-text{
+
+.card-text {
     color: #311818;
     font-size: 13px;
     font-family: 'Arial', 'Sans-Serif';
-    font-weight: 600;   
+    font-weight: 600;
 }
-.card-heading{
+
+.card-heading {
     color: #000000;
     font-weight: bold;
-    font-size: 30px;
-    letter-spacing: 4px;
+    font-size: 24px;
+    letter-spacing: 2px;
     font-family: 'Arial';
+    margin-top: 10px;
 }
-.click{
+
+.click-arrow {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.click,
+.arrow {
     font-size: 13px;
     color: #311818;
     font-family: 'Arial';
     font-weight: 600;
     margin-right: 10px;
 }
-.arrow{
-    font-size: 10px;
+
+
+@media only screen and (max-width: 1024px) {
+
+
+ 
+    /* Styles for mobile devices */
+
+    .lorem-container {
+        max-width: 100%; /* Set a maximum width for better readability on larger screens */
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .top-page-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%; /* Set the height to 100% */
+    }
+    .lorem-heading {
+        font-size: 8vw;
+        letter-spacing: 2vw;
+    }
+
+    .lorem-description {
+        font-size: 3vw;
+    }
+
+    .click-me-button {
+        width: 80vw;
+        height: 15vw;
+        font-size: 3vw;
+    }
+
+    .bottom-page-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+     
+                
+    }
+   
 }
 
-.lorem-card-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0;
-    height: 430px;
-    margin-top: 20px;
-}
-.click-arrow{
-    display: flex;
-}
